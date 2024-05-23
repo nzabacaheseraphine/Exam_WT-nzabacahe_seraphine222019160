@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style7.css">
+</head>
+<body>
+    <center>
+    <h1>Courses Page</h1>
+    
+    <!-- Courses Registration Form -->
+    <h2>Create Courses</h2>
+    <form action="landingcourses.php" method="post">
+        <label for="title">Title:</label><br>
+        <input type="text" name="title" required><br>
+        <label for="description">Description:</label><br>
+        <input type="text" name="description" required><br>
+        <label for="instructor_id">Instructor ID:</label><br>
+        <input type="number" name="instructor_id" required><br>
+        <label for="start_date">Start Date:</label><br>
+        <input type="date" name="start_date" required><br>
+        <label for="end_date">End Date:</label><br>
+        <input type="date" name="end_date" required><br>
+        <label for="price">Price:</label><br>
+        <input type="number" name="price" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    </center>
+</body>
+</html>

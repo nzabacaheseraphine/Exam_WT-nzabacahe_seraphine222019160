@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!---nzabacahe seraphine 222019160--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notifications Panel</title>
+</head>
+<body>
+    <h1>notifications Panel</h1>
+    
+    <!-- notifications Registration Form -->
+    <h2>Create notifications</h2>
+    <form method="post" action="landingnotifications.php">
+        <label for="user_id">user_id:</label><br>
+        <input type="number" name="user_id" required><br>
+        <label for="message">message:</label><br>
+        <input type="text" name="message" required><br>
+        
+       
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User notifications
+         </h2>
+     <form method="post" action="landingnotifications.php">
+                    <input type="number" name="notification_id" placeholder=" New notification_id">
+                    <input type="text" name="newuser_id" placeholder="New user_id">
+                    <input type="text" name="newmessage" placeholder="New message">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

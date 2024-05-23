@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!---nzabacahe seraphine 222019160--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style7.css">
+    <title>workshops Panel</title>
+</head>
+<body>
+    <h1>workshops Panel</h1>
+    
+    <!-- workshops Registration Form -->
+    <h2>Create workshops</h2>
+    <form method="post" action="landingworkshops.php">
+        <label for="title">title:</label><br>
+        <input type="text" name="title" required><br>
+        <label for="start_date">start_date :</label><br>
+        <input type="date" name="start_date" required><br>
+       <label for="end_date">end_date :</label><br>
+        <input type="date" name="end_date" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User workshops
+         </h2>
+     <form method="post" action="landingworkshops.php">
+                    <input type="number" name="workshop_id" placeholder=" New workshop_id">
+                    <input type="text" name="newtitle" placeholder="New title">
+                    <input type="date" name="newstart_date" placeholder="Newstart_date">
+                    <input type="date" name="newend_date" placeholder="New end_date">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

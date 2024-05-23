@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!---nzabacahe seraphine 222019160--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style7.css">
+    <title>attendances Panel</title>
+</head>
+<body>
+    <h1>attendances Panel</h1>
+    
+    <!-- attendances Registration Form -->
+    <h2>Create attendances</h2>
+    <form method="post" action="landingattendances.php">
+        <label for="workshop_id">workshop_id:</label><br>
+        <input type="number" name="workshop_id" required><br>
+        <label for="user_id">user_id:</label><br>
+        <input type="number" name="user_id" required><br>
+        <label for="attendance_date">attendance_date:</label><br>
+        <input type="text" name="attendance_date" required><br>
+        
+       
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User attendances
+         </h2>
+     <form method="post" action="landingattendances.php">
+                    <input type="number" name="attendance_id" placeholder=" New attendance_id">
+                    <input type="number" name="newworkshop_id" placeholder="New workshop_id">
+                    <input type="number" name="newuser_id" placeholder="New user_id">
+                    <input type="text" name="newattendance_date" placeholder="New attendance_date">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

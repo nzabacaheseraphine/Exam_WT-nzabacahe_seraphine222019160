@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+   <!---nzabacahe seraphine 222019160--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style7.css">
+    <title>instructors Panel</title>
+</head>
+<body>
+    <h1>instructors Panel</h1>
+    
+    <!-- instructors Registration Form -->
+    <h2>Create instructors</h2>
+    <form method="post" action="landinginstructors.php">
+        <label for="user_id">user_id:</label><br>
+        <input type="number" name="user_id" required><br>
+        <label for="bio">bio:</label><br>
+        <input type="text" name="bio" required><br>
+        <label for="expertise">expertise:</label><br>
+        <input type="text" name="expertise" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User instructors
+         </h2>
+     <form method="post" action="landinginstructors.php">
+                    <input type="number" name="instructor_id" placeholder=" New instructor_id">
+                    <input type="number" name="newuser_id" placeholder="New user_id">
+                    <input type="number" name="newbio" placeholder="New bio">
+                    <input type="text" name="newexpertise" placeholder="New expertise">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

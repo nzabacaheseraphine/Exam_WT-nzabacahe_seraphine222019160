@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!---nzabacahe seraphine 222019160--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style7.css">
+    <title>courses Panel</title>
+</head>
+<body>
+    <h1>courses Panel</h1>
+    
+    <!-- courses Registration Form -->
+    <h2>Create courses</h2>
+    <form method="post" action="landingcourses.php">
+        
+        <label for="title">title:</label><br>
+        <input type="text" name="title" required><br>
+        <label for="description">description:</label><br>
+        <input type="text" name="description" required><br>
+        <label for="instructor_id">instructor_id :</label><br>
+        <input type="number" name="instructor_id" required><br>
+        <label for="start_date">start_date :</label><br>
+        <input type="date" name="start_date" required><br>
+       <label for="end_date">end_date :</label><br>
+        <input type="date" name="end_date" required><br>
+         <label for="price">price :</label><br>
+        <input type="number" name="price" required><br>
+
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User courses
+         </h2>
+     <form method="post" action="landingcourses.php">
+                    <input type="number" name="course_id" placeholder=" New course_id">
+                    <input type="text" name="newtitle" placeholder="New title">
+                    <input type="text" name="newdescription" placeholder="New description">
+                    <input type="number" name="newinstructor_id" placeholder="New instructor_id">
+                    <input type="date" name="newstart_date" placeholder="New start_date">
+                    <input type="date" name="newend_date" placeholder="New end_date">
+                     <input type="number" name="newprice" placeholder="New price">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>
